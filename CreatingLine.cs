@@ -15,7 +15,7 @@ namespace LineComparison
         public static int x2;
         public static int y1;
         public static int y2;
-            public void CreateLine()
+            public double CreateLine()
             {
                 Random random = new Random();
                 x1 = random.Next(10);
@@ -26,6 +26,7 @@ namespace LineComparison
 
                 double LineLength = Math.Sqrt(Math.Pow((x2 - x1), 2) + (Math.Pow((y2 - y1), 2)));
                 Console.WriteLine("The length of line is  " + LineLength);
+             return LineLength;
 
 
             }
